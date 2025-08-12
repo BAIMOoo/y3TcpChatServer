@@ -3,9 +3,4 @@
 
 y3.config.log.level  = 'debug'
 
-
-y3.game:event('游戏-初始化', function (trg, data)
-    print('Hello, Y3!')
-end)
-
 require 'TcpClient.clientEcaDefine'
