@@ -11,7 +11,7 @@ Client:connect()
 -- 监听游戏内事件来发送聊天消息
 -- 例如：玩家按下回车键发送消息
 y3.game:event("玩家-发送消息", function(trg, data)
-    -- 断开链接 
+    -- 断开链接
     if data.str1 == 'lv' then
         Client:disconnect()
         return

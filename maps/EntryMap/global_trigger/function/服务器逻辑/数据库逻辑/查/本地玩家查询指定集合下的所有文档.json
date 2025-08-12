@@ -9,68 +9,6 @@
                         {
                             "__tuple__": true, 
                             "items": [
-                                "TABLE", 
-                                "t", 
-                                "local"
-                            ]
-                        }
-                    ], 
-                    "sub_type": 1
-                }, 
-                {
-                    "arg_type": 100011, 
-                    "args_list": [
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                "EcaQueryAllDocuments(args[1])"
-                            ], 
-                            "sub_type": 1
-                        }
-                    ], 
-                    "op_arg": [
-                        {
-                            "arg_type": 100003, 
-                            "args_list": [
-                                {
-                                    "__tuple__": true, 
-                                    "items": [
-                                        "STRING", 
-                                        "集合名", 
-                                        "local"
-                                    ]
-                                }
-                            ], 
-                            "sub_type": 2
-                        }, 
-                        null, 
-                        null, 
-                        null, 
-                        null
-                    ], 
-                    "op_arg_enable": [
-                        true, 
-                        false, 
-                        false, 
-                        false, 
-                        false
-                    ], 
-                    "sub_type": "Eval_Lua_TABLE"
-                }
-            ], 
-            "bp": false, 
-            "element_id": 647307320000004, 
-            "enable": false
-        }, 
-        {
-            "action_type": "SET_VARIABLE", 
-            "args_list": [
-                {
-                    "arg_type": 100030, 
-                    "args_list": [
-                        {
-                            "__tuple__": true, 
-                            "items": [
                                 "STRING", 
                                 "请求id", 
                                 "local"

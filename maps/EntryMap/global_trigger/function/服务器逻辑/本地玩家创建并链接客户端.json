@@ -32,9 +32,16 @@
                 {
                     "arg_type": 100002, 
                     "args_list": [
-                        25897
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "INTEGER", 
+                                "端口", 
+                                "local"
+                            ]
+                        }
                     ], 
-                    "sub_type": 1
+                    "sub_type": 6
                 }, 
                 null, 
                 null, 
