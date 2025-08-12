@@ -238,3 +238,25 @@ function EcaDeleteDocumentById(collection, id)
     end)
     return reqId
 end
+
+local chatT = y3.game:event("玩家-发送消息", function(trg, data)
+    -- 全服聊天
+    if data.player == y3.player.get_local() then
+        print('[聊天]', data.str1)
+        Client:sendChatMessage(data.str1)
+    end
+end)
+
+---comment
+function EcaEnableChat()
+    if chatT then
+        chatT:enable()
+    end 
+end
+
+---comment
+function EcaDisableChat()
+    if chatT then
+        chatT:disable()
+    end 
+end

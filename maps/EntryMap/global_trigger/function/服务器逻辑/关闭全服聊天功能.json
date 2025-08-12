@@ -1,0 +1,54 @@
+{
+    "action": [
+        {
+            "action_type": "EVALUATE_LUA_CODE", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "EcaDisableChat()"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 1890435159000001, 
+            "enable": true, 
+            "op_arg": [
+                null, 
+                null, 
+                null, 
+                null, 
+                null
+            ], 
+            "op_arg_enable": [
+                false, 
+                false, 
+                false, 
+                false, 
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "关闭全服聊天功能", 
+    "func_id": "30a5e303776311f083d4f5eb55986e06", 
+    "func_name": "关闭全服聊天功能", 
+    "group_id": "WVJATHdUEfCIyPXrVZhuBu", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 1890435159, 
+    "trigger_name": "关闭全服聊天功能", 
+    "valid": true, 
+    "var_data": [
+        {}, 
+        {}, 
+        []
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "action": [
+        {
+            "action_type": "EVALUATE_LUA_CODE", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "EcaEnableChat()"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 27852886000002, 
+            "enable": true, 
+            "op_arg": [
+                null, 
+                null, 
+                null, 
+                null, 
+                null
+            ], 
+            "op_arg_enable": [
+                false, 
+                false, 
+                false, 
+                false, 
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "该功能默认开启", 
+    "func_des": "开启全服聊天功能", 
+    "func_id": "03e1cd30776311f087e9f5eb55986e06", 
+    "func_name": "开启全服聊天功能", 
+    "group_id": "WVJATHdUEfCIyPXrVZhuBu", 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 27852886, 
+    "trigger_name": "开启全服聊天功能", 
+    "valid": true, 
+    "var_data": [
+        {}, 
+        {}, 
+        []
+    ]
+}

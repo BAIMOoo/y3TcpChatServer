@@ -113,6 +113,18 @@ function Client.create(host, port, loginData)
         
         self.network:send(packet)
     end
+
+    -- 发送聊天消息
+    function client:sendChatMessage(content)
+        local message = {
+            type = "chat",
+            playerId = self:getPlayerId(),
+            playerName = self:getPlayerName(),
+            content = content
+        }
+        self:sendMessage(message)
+    end
+
     
     -- MongoDB 查询操作
     function client:findDocuments(collection, filter, options, callback)
@@ -226,7 +238,20 @@ function Client.create(host, port, loginData)
         self:sendMessage(message)
         return requestId
     end
-    
+
+    ---判断玩家是否和本地玩家在同一个房间
+    ---@param playerName string 玩家名称
+    ---@return boolean
+    local function checkIsSameRoom(playerName)
+        local player_group = y3.player_group:get_neutral_player_group():pick()
+        for _, player in pairs(player_group) do
+            if GameAPI.get_player_full_nick_name(player.handle) == playerName then
+                return true
+            end
+        end
+        return false
+    end
+
     -- 处理接收到的消息
     function client:handleMessage(jsonStr)
         local success, message = pcall(function()
@@ -240,8 +265,10 @@ function Client.create(host, port, loginData)
         
         -- 处理聊天消息
         if message.service == nil or message.service == "chat" then
-            if message.type == "chat" then
+            --- 如果是同一个房间也不需要展示接受到的消息
+            if message.type == "chat" and not checkIsSameRoom(message.playerName) then
                 y3.player.with_local(function (local_player)
+                    --- 不重复给自己发消息
                     if local_player:get_platform_id() ~= message.playerId then
                         local_player:display_info("[" .. message.playerName .. "]: " .. message.content)
                     end
