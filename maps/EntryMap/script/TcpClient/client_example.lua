@@ -1,6 +1,6 @@
 local Client = require 'Client'
 -- 创建聊天客户端实例
-local Client = Client.create('127.0.0.1', 25897, {
+local Client = Client.create('60.205.162.211', 25897, {
     playerId = y3.player.get_local():get_platform_id(),
     playerName = GameAPI.get_player_full_nick_name(y3.player.get_local().handle)
 })
