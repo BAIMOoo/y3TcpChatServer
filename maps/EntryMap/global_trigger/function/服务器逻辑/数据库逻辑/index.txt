@@ -1,0 +1,6 @@
+{
+    "删.folder": 3, 
+    "增.folder": 1, 
+    "改.folder": 2, 
+    "查.folder": 0
+}

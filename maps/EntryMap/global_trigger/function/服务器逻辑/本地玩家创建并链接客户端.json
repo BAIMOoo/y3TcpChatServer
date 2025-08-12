@@ -1,0 +1,105 @@
+{
+    "action": [
+        {
+            "action_type": "EVALUATE_LUA_CODE", 
+            "args_list": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        "EcaCreateClient(args[1],args[2])"
+                    ], 
+                    "sub_type": 1
+                }
+            ], 
+            "bp": false, 
+            "element_id": 241815608000003, 
+            "enable": true, 
+            "op_arg": [
+                {
+                    "arg_type": 100003, 
+                    "args_list": [
+                        {
+                            "__tuple__": true, 
+                            "items": [
+                                "STRING", 
+                                "ip", 
+                                "local"
+                            ]
+                        }
+                    ], 
+                    "sub_type": 2
+                }, 
+                {
+                    "arg_type": 100002, 
+                    "args_list": [
+                        25897
+                    ], 
+                    "sub_type": 1
+                }, 
+                null, 
+                null, 
+                null
+            ], 
+            "op_arg_enable": [
+                true, 
+                true, 
+                false, 
+                false, 
+                false
+            ]
+        }
+    ], 
+    "call_enabled": true, 
+    "condition": [], 
+    "enabled": true, 
+    "event": [], 
+    "func_category": "t_function", 
+    "func_comment": "", 
+    "func_des": "本地玩家创建并链接客户端, ip:{ip}, port:{端口}", 
+    "func_id": "b361b250742c11f09332851b227abc2f", 
+    "func_name": "本地玩家创建并链接客户端", 
+    "func_param_list": [
+        {
+            "__tuple__": true, 
+            "items": [
+                "ip", 
+                true
+            ]
+        }, 
+        {
+            "__tuple__": true, 
+            "items": [
+                "端口", 
+                true
+            ]
+        }
+    ], 
+    "group_id": 0, 
+    "is_func": true, 
+    "is_official_func": false, 
+    "p_trigger_id": null, 
+    "trigger_id": 241815608, 
+    "trigger_name": "本地玩家创建并链接客户端", 
+    "valid": true, 
+    "var_data": [
+        {
+            "INTEGER": {
+                "端口": 0
+            }, 
+            "NEW_TIMER": {}, 
+            "PLAYER": {}, 
+            "PLAYER_GROUP": {}, 
+            "STRING": {
+                "ip": ""
+            }
+        }, 
+        {
+            "ip": 0, 
+            "端口": 0
+        }, 
+        [
+            "ip", 
+            "端口"
+        ]
+    ]
+}
