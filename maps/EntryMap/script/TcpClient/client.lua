@@ -245,7 +245,7 @@ function Client.create(host, port, loginData)
     local function checkIsSameRoom(playerName)
         local player_group = y3.player_group:get_neutral_player_group():pick()
         for _, player in pairs(player_group) do
-            if GameAPI.get_player_full_nick_name(player.handle) == playerName then
+            if player:get_state() == 1 and GameAPI.get_player_full_nick_name(player.handle) == playerName then
                 return true
             end
         end
